@@ -1,0 +1,83 @@
+<div>
+    <h1 class="titleCourses text-center">Nuestros Cursos</h1>
+</div>
+<p class="parrafo__courses text-center">
+    Potencia tu aprendizaje con nuestros cursos dinámicos y adquiere habilidades claves para
+    destacar en tu carrera profesional
+</p>
+<p-divider></p-divider>
+
+<div class="card-container botones flex justify-content-center">
+    <input type="text" placeholder="Buscar..." name="filterPost" style="border: 1px solid; border-radius: 10px"
+        [(ngModel)]="filterPost" />
+</div>
+
+<div style="background: #748BB3;" class=" card-container flex justify-content-center result-label" *ngIf="( filterPost == '')">
+    <h4>
+        <p >Total de cursos : {{ (coursesService.courses | filter: filterPost).length }} </p>
+    </h4>
+</div>
+<div class="card-container flex justify-content-center result-label"
+    *ngIf="( coursesService.courses | filter: filterPost).length === 1">
+    <h4>
+        <p>Se encontro 1 resultado</p>
+    </h4>
+</div>
+
+<div class="card-container flex justify-content-center result-label"
+    *ngIf="( filterPost != '' && coursesService.courses | filter: filterPost).length > 1">
+    <h4>
+        <p>Se encontraron {{ (coursesService.courses | filter: filterPost).length }} resultados</p>
+    </h4>
+</div>
+<div class="card-container flex justify-content-center result-label"
+    *ngIf="(coursesService.courses | filter: filterPost).length === 0">
+    <h4>
+        <p>No se encontraron resultados de busqueda !</p>
+    </h4>
+</div>
+<div class="card-container flex justify-content-center result-label-dos"
+    *ngIf="(coursesService.courses | filter: filterPost).length === 0">
+</div>
+
+<div class="flex justify-content-center flex-wrap">
+    <div class="card-container flex justify-content-center flex-wrap"
+        *ngFor="let course of coursesService.courses | filter:filterPost ">
+        <p-card [style]="{ width: '360px', height: '25em', 
+        background:'#070760', color : 'white'}" styleClass=" shadow-2"
+            class=" font-bold text-white border-round m-2">
+            <div class="card" style="height: 100%;">
+                <h2 [style]="{height: '3em', textAlign: 'center'}">
+                    {{ course.title }}
+                </h2>
+                <p [style]="{height: '2em'}">
+                    {{ course.subtitle }}
+                </p>
+                <p-divider></p-divider>
+                <h3>
+                    {{course.price | currency}}
+                </h3>
+                <p class="card__cuotes">
+                    Hasta {{course.due}} cuotas sin interés de <span
+                        class="card__price--bold">{{coursesService.getRoundedPrice(course.price, course.due)}}</span>
+                </p>
+                <p class="card__starter mb-3">
+                    fecha de inicio: {{ course.start_date | date:'dd-MM-yyyy' :'UTC' }}
+                </p>
+                <p-divider></p-divider>
+                <div class="flex justify-content-start flex-wrap button gap-4">
+                    <button label="Ver detalle" [routerLink]="['/courses', course.id]"
+                        class="btnCourses flex align-items-center justify-content-center"
+                        styleClass="p-button-raised p-button-text text-50">Ver detalle
+                    </button>
+
+                    <button label="Inscribite" [routerLink]="['/inscripcion']" icon="pi pi-times"
+
+                        class="btnCourses flex align-items-center justify-content-center"
+                        styleClass="p-button-raised p-button-text text-50" >x Inscribite
+                    </button>
+                </div>
+            </div>
+        </p-card>
+    </div>
+</div>

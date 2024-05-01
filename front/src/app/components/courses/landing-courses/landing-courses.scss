@@ -1,0 +1,191 @@
+@use '../../../../scss/utilities/barrel' as *;
+.section__cards {
+    background-color: #FFFF;
+    padding: 2em 0em;
+    .article__cards {
+
+        .header__courses {
+
+            .title__courses {
+                color: #070760;
+                text-align: center;
+                font-weight: 500;
+                margin-bottom: 2rem;
+    
+            }
+
+            .title__highlited {
+
+                border-bottom: .3rem solid #FF6600;
+
+            }
+    
+            .parrafo__container {
+                color: #1E40A5;
+                display: flex;
+                justify-content: center;
+
+                .parrafo__courses {
+    
+                    text-align: center;
+                    font-weight: 400;
+                    max-width: 75ch;
+        
+                }
+
+            }
+
+            .container__button {
+
+                display: grid;
+                place-items: center;
+
+                .button__all {
+
+                    margin-top: 2rem;
+                    border: 2px solid #FF6600;
+                    box-shadow: 1px 2px 3px rgb(96, 94, 94);
+                    background-color: white;
+
+                    &[label~='Ver'] {
+                        background-color: #FF6600;
+                        color: white;
+                        font-weight: bold;
+                    }
+
+                }
+
+            }
+
+        }
+
+        .card {
+            background-color: #070760;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $wireframe;
+            border-radius: 1rem;
+            padding: 1rem;
+            margin-top: 1.5rem;
+            width: min-content;
+
+            &__title {
+
+                font-weight: 600;
+                text-transform: uppercase;
+
+            }
+
+            &__subtitle {
+
+
+                color: $wireframe;
+                
+            }
+
+            &__price--bold {
+
+                font-weight: 400;
+
+            }
+
+            &__price {
+
+                font-weight: 900;
+
+            }
+
+            &__line {
+
+                border: 1px solid $wireframe;
+
+            }
+
+            .card__button--info {
+
+                color: black;
+
+            }
+
+            .card__content {
+               
+                display: flex;
+                flex-direction: column;
+
+                .footer {
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: .3rem;
+                    margin-top: 1rem;
+
+                    &__button--info {
+                        box-shadow: 1px 2px 3px rgb(190, 184, 184);
+                        background-color: #FF6600;
+                        white-space: nowrap;
+                        margin-bottom: 1rem;
+                        color: white;
+                        font-weight: bold;
+                        text-transform: uppercase;
+
+                    }
+
+                    &__button--apply {
+            
+                        box-shadow: 1px 2px 3px rgb(190, 184, 184);
+                        background-color: #FF6600;
+                        white-space: nowrap;
+                        color: white;
+                        font-weight: bold;
+                        text-transform: uppercase;
+
+                    }
+
+                }
+
+
+            }
+
+
+        }
+
+
+    }
+
+}
+
+@media screen and (min-width: $large) {
+
+    .card {
+
+        max-width: toEm(425px);
+
+        .card__content {
+
+            max-width: toEm(425px);
+
+            .footer {
+
+                &__button--info {
+
+                    max-width: toEm(425px);
+
+                }
+
+                &__button--apply {
+
+                    max-width: toEm(425px);
+
+                }
+
+            }
+
+
+        }
+
+    }
+
+}

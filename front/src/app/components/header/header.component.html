@@ -1,0 +1,81 @@
+<!-- Menu ppal-->
+<nav class="menuppal">
+  <p-toast position="top-right" styleClass="opacity-100"></p-toast>
+  <div class="borderImg border-circle w-6rem h-6rem m-2  font-bold flex 
+  align-items-center justify-content-center">
+  <a routerLink="/">
+    <img class="w-12" src="../../../assets/img/logoIncubadora.png" alt="logo">
+  </a>
+</div>
+  <div>
+    <p *ngIf="nombreUsuario">{{nombreUsuario ? 'Bienvenido ' + nombreUsuario : ""}}</p>
+  </div>
+  <ul class="nav list">
+    <li><a routerLink="/">Inicio</a></li>
+    <li><a href="#cursos">Cursos</a></li>
+    <li><a href="#alianzas">Alianzas</a></li>
+    <ul class="dropdown" type="none">
+      <li><a>Experiencias destacadas</a>
+        <ul class="cursos" type="none">
+          <li><a href="#testimonios">Testimonios</a></li>
+        </ul>
+      </li>
+    </ul>
+    <li><a href="#contacto">Contacto</a></li>
+    <li *ngIf="userlogued"  (click)="showDialog()" class="border-solid cursor-pointer">Iniciar sesión</li>
+    <li *ngIf="usuarioAutenticado"  (click)="Logout()" class="border-solid cursor-pointer">Cerrar sesión</li>
+  </ul>
+</nav> 
+
+<p-dialog class="flex align-items-center justify-content-center " [(visible)]="visible" [modal]="true"
+  [style]="{ width: '20vw' }" [draggable]="false" [resizable]="false">
+  <h2 style="text-align: center;">Iniciar sesión</h2>
+  <br>
+  <div class="login-form">
+    <form (ngSubmit)="login(username.value, password.value)"
+      class="flex justify-content-center align-items-center flex-column gap-5">
+      <div class="form-group">
+        <label for="username" class="font-bold">Usuario:</label>
+        <input type="text" id="username" name="username" pInputText #username required placeholder="Estudiante123">
+      </div>
+      <div class="form-group">
+        <label for="password" class="font-bold">Contraseña:</label>
+        <div class="position-icon">
+          <input [type]="showPassword ? 'text' : 'password'" id="password" name="password" pInputText #password required
+            placeholder="Contraseña123">
+          <i [ngClass]="showPassword ? 'pi pi-eye-slash' : 'pi pi-eye' " class="password-toggle-icon cursor-pointer"
+            (click)="showPassword = !showPassword"></i>
+        </div>
+      </div>
+      <p-button label="Iniciar sesión" type="submit" routerLink="/" class="cursor-pointer"></p-button>
+    </form>
+  </div>
+</p-dialog>
+<div class="menu-hamburguesa">
+  <input id="check" type="checkbox">
+  <label for="check">
+    <div class="menu-hamb">
+      <span class="hamburguer"></span>
+    </div>
+  </label>
+  <ul class="ul-mbl">
+    <div>
+      <p *ngIf="nombreUsuario">{{nombreUsuario ? 'Bienvenido ' + nombreUsuario : ""}}</p>
+    </div>
+    <li><a routerLink="/">Inicio</a></li>
+    <li><a href="#cursos">Cursos</a></li>
+    <li><a href="#alianzas">Alianzas</a></li>
+    <ul class="dropdown" type="none">
+      <li><a>Exp. destacadas</a>
+        <ul class="cursos" type="none">
+          <li><a href="#testimonios">Testimonios</a></li>
+        </ul>
+      </li>
+    </ul>
+    <li><a href="#contacto">Contacto</a></li>
+    <li *ngIf="userlogued"  (click)="showDialog()">Login</li>
+    <li *ngIf="usuarioAutenticado"  (click)="Logout()">Logout</li>
+    
+  </ul>
+  
+</div>

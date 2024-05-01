@@ -1,0 +1,114 @@
+@use '../../../scss/utilities/barrel' as *;
+
+.section__testimonials {
+    
+    display: grid;
+    place-items: center;
+    margin-bottom: 5rem;
+    padding: 2em 0em;
+
+    .testimonials__title {
+        color: #070760;
+        text-align: left;
+        margin-bottom: 2rem;
+
+    }
+
+    .article__cards {
+
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        gap: 2rem;
+
+        .container__card {
+            background-color: #748BB3;
+            box-shadow: 3px 3px 3px rgb(178, 61, 14) ;
+            border: 1px solid $wireframe;
+            border-radius: .3rem;
+            width: 100%;
+            height: auto;
+
+            .card__content {
+                
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                padding: 2rem;
+
+                .card__image {
+                    
+                    .person__image {
+
+                        border-radius: 100%;
+                        border: 2px solid #FF6600;
+                        object-fit: cover;
+
+                    }
+
+                }
+
+                .card__description {
+
+                    margin: 1rem 0 1rem
+                }
+
+                .card__personal {
+
+                    .personal__fullName {
+
+                        font-size: 1.5rem;
+
+                    }
+
+                    .personal__role {
+
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: white;
+
+                    }
+
+                }
+
+
+
+            }
+
+
+        }
+
+
+    }
+
+}
+
+
+@media screen and (min-width: $large) {
+
+    .section__testimonials {
+
+        .article__cards {
+
+            max-width: 425px;
+
+        }
+
+    }
+
+}
+
+@media screen and (min-width: $laptop) {
+
+    .section__testimonials {
+
+        .article__cards {
+
+            flex-direction: row;
+            max-width: 1024px;
+
+        }
+
+    }
+
+}
