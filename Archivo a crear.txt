@@ -10,3 +10,6 @@ DB_USERNAME=root
 ENVIRONMENT=development 
 LOG_LEVEL=debug 
 SESSION_SECRET=secret
+
+
+PD:  *En caso de que MySQL tenga un password distinto debe ser reemplzado en DB_PASSWORD*
