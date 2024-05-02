@@ -1,6 +1,6 @@
 # Incubadora Noc
 <div align="center">
-  <img src="https://github.com/Ludmimar/Incubadora_Noc/blob/main/front/src/assets/img/bannerIncubadora.png" alt="Docusaurus">
+  <img src="https://github.com/Ludmimar/Incubadora_Noc/blob/main/front/src/assets/img/bannerIncubadora.png" alt="Incubadora">
 </div>
 
 ## Introduccion
@@ -84,3 +84,15 @@ Una vez clonado el repositorio en tu equipo, seguir los siguientes pasos:
 # **Video**
 
 > Este proyecto fue entregado mediante una [Demo](https://www.youtube.com/playlist?list=PLHYbcawDSCphxXIGliFUQmgshn3yt4Zid) al docente encargado de calificarnos.
+
+
+## Equipo de desarrollo 👨‍🔧👩‍🔧
+
+Este proyecto ha sido desarrollado por el siguiente equipo:
+### Frontend
+- [Ludmila Martos](https://www.linkedin.com/in/ludmila-martos/) 
+- [Exequiel Portero](https://www.linkedin.com/in/exequiel-portero/) 
+- [Soledad Arguello](https://www.linkedin.com/in/soledad-arguello/)
+### Backend
+- [Julio Martin](https://www.linkedin.com/in/julio-martin/) 
+- [Carlos Gavernet](https://www.linkedin.com/in/cgavernet/)
