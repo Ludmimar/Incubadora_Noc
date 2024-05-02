@@ -6,7 +6,7 @@
 
 ## Introduccion 📋
 
-Incubadora Noc es un proyecto realizado en [Equipo](#Equipo) equipo para el Bootcamp de la empresa Santex, [Tecnology with purpose](https://technologywithpurpose.org/).
+Incubadora Noc es un proyecto realizado en equipo para el Bootcamp de la empresa Santex, [Tecnology with purpose](https://technologywithpurpose.org/).
 El proyecto es para la incubadora del NOC, la institución tiene la necesidad de tener una página web donde se pueda comunicar los diferentes cursos de capacitación que se brindan como así también las futuras convocatorias para los cohortes del Academy.
 Además, poder administrar los cursos y los datos de los alumnos que se inscriben a los mismos, registrar asistencias y pago de matrícula.
 
@@ -101,7 +101,7 @@ Una vez clonado el repositorio en tu equipo, seguir los siguientes pasos:
 > Este proyecto fue entregado mediante una [Demo](https://www.youtube.com/playlist?list=PLHYbcawDSCphxXIGliFUQmgshn3yt4Zid) al docente encargado de calificarnos.
 
 
-## Equipo de desarrollo 👨‍🔧👩‍🔧
+##Equipo de desarrollo 👨‍🔧👩‍🔧
 
 Este proyecto ha sido desarrollado por el siguiente equipo:
 ### Frontend 🖥️
