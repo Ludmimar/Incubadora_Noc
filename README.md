@@ -6,7 +6,7 @@
 
 ## Introduccion 📋
 
-Incubadora Noc es un proyecto realizado en equipo para el Bootcamp de la empresa Santex, [Tecnology with purpose](https://technologywithpurpose.org/).
+Incubadora Noc es un proyecto realizado por el equipo The_Undefined para el Bootcamp de la empresa Santex, [Tecnology with purpose](https://technologywithpurpose.org/).
 El proyecto es para la incubadora del NOC, la institución tiene la necesidad de tener una página web donde se pueda comunicar los diferentes cursos de capacitación que se brindan como así también las futuras convocatorias para los cohortes del Academy.
 Además, poder administrar los cursos y los datos de los alumnos que se inscriben a los mismos, registrar asistencias y pago de matrícula.
 
@@ -27,6 +27,7 @@ Backend 🔙🔚
 - Express.js
 - Sequelize
 
+### Diseño : [Figma](https://www.figma.com/file/bv4gh3wcgx3WWsxWI9qZiX/The-Undefined?type=design&node-id=1-3&mode=design)
 
 **Como comenzar:**🚀
 
