@@ -17,7 +17,7 @@ Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
 
 Front-End 🖥️
 
-- Angular CLI
+- Angular 16
 - SCSS
 - PrimeNG
 
