@@ -1,14 +1,34 @@
 # Incubadora Noc
+### Dedicada a incubar emprendimientos para conseguir mejores resultados en menor tiempo, brindando a los emprendedores herramientas financieras, sesiones de coaching, mentoring, seguimiento personalizado, cursos y capacitación. 
 <div align="center">
   <img src="https://github.com/Ludmimar/Incubadora_Noc/blob/main/front/src/assets/img/bannerIncubadora.png" alt="Incubadora">
 </div>
 
-## Introduccion
+## Introduccion 📋
 
-Incubadora Noc es un proyecto realizado en equipo para el Bootcamp de la empresa Santex, [Tecnology with purpose](https://technologywithpurpose.org/)
+Incubadora Noc es un proyecto realizado en [Equipo](#Equipo) equipo para el Bootcamp de la empresa Santex, [Tecnology with purpose](https://technologywithpurpose.org/).
+El proyecto es para la incubadora del NOC, la institución tiene la necesidad de tener una página web donde se pueda comunicar los diferentes cursos de capacitación que se brindan como así también las futuras convocatorias para los cohortes del Academy.
+Además, poder administrar los cursos y los datos de los alumnos que se inscriben a los mismos, registrar asistencias y pago de matrícula.
 
 
-**Como comenzar:**
+## Tecnologías utilizadas 🛠️
+
+Este proyecto se ha desarrollado utilizando las siguientes tecnologías:
+
+Front-End 🖥️
+
+- Angular CLI
+- SCSS
+- PrimeNG
+
+Backend 🔙🔚
+
+- Node.js
+- Express.js
+- Sequelize
+
+
+**Como comenzar:**🚀
 
 Una vez clonado el repositorio en tu equipo, seguir los siguientes pasos:
 - #### 1 - Deben tener una instancia de MySQL iniciada.
@@ -74,14 +94,9 @@ Una vez clonado el repositorio en tu equipo, seguir los siguientes pasos:
   <img src="https://raw.githubusercontent.com/Ludmimar/Incubadora_Noc/main/img_proyect/crud-students.png" alt="Crud Estudiantes" Style="width: 20%">
 </div>
 
-> [Home](https://raw.githubusercontent.com/Ludmimar/Incubadora_Noc/main/img_proyect/home.png) /
-> [Todos los Cursos](https://raw.githubusercontent.com/Ludmimar/Incubadora_Noc/main/img_proyect/all-courses.png) /
-> [Detalle de un Curso](https://raw.githubusercontent.com/Ludmimar/Incubadora_Noc/main/img_proyect/courses.png) /
-> [Plataforma Administrador](https://raw.githubusercontent.com/Ludmimar/Incubadora_Noc/main/img_proyect/adminPlatform.png) /
-> [Crud Estudiantes](https://raw.githubusercontent.com/Ludmimar/Incubadora_Noc/main/img_proyect/crud-students.png)
 
 
-# **Video**
+# **Video** 🎥
 
 > Este proyecto fue entregado mediante una [Demo](https://www.youtube.com/playlist?list=PLHYbcawDSCphxXIGliFUQmgshn3yt4Zid) al docente encargado de calificarnos.
 
@@ -89,10 +104,10 @@ Una vez clonado el repositorio en tu equipo, seguir los siguientes pasos:
 ## Equipo de desarrollo 👨‍🔧👩‍🔧
 
 Este proyecto ha sido desarrollado por el siguiente equipo:
-### Frontend
+### Frontend 🖥️
 - [Ludmila Martos](https://www.linkedin.com/in/ludmila-martos/) 
 - [Exequiel Portero](https://www.linkedin.com/in/exequiel-portero/) 
 - [Soledad Arguello](https://www.linkedin.com/in/soledad-arguello/)
-### Backend
+### Backend 🔙
 - [Julio Martin](https://www.linkedin.com/in/julio-martin/) 
 - [Carlos Gavernet](https://www.linkedin.com/in/cgavernet/)
