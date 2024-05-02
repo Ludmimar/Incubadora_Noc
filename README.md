@@ -102,7 +102,7 @@ Una vez clonado el repositorio en tu equipo, seguir los siguientes pasos:
 > Este proyecto fue entregado mediante una [Demo](https://www.youtube.com/playlist?list=PLHYbcawDSCphxXIGliFUQmgshn3yt4Zid) al docente encargado de calificarnos.
 
 
-##Equipo de desarrollo 👨‍🔧👩‍🔧
+## Equipo de desarrollo 👨‍🔧👩‍🔧
 
 Este proyecto ha sido desarrollado por el siguiente equipo:
 ### Frontend 🖥️
